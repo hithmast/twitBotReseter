@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 #fname = input("Enter A File Name :") #comment that if u wanna the script work automatic after that folow  NEXT Line 
@@ -23,9 +24,9 @@ while True :
             
             #Chosing email input radio button
   
-        if   browser.find_element('<div class="PageHeader Edge">Verify your personal information</div>') is True :
-            print(tw_email)
-            continue
-        else:
-            print("INVALID INPUT -- - - ADD MORE LINES ")
-            break #BY hithmast
+            elif browser.find_element('<div class="PageHeader Edge">Verify your personal information</div>') is True :
+                print(tw_email)
+                continue
+            else:
+                print("INVALID INPUT -- - - ADD MORE LINES ")
+                break #BY hithmast
